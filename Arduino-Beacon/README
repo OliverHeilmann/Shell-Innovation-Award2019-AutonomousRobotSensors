@@ -1,0 +1,3 @@
+# As explained by the notes in the script, you may offload the computational load of sorting through the incoming
+# Marvelmind beacon data (from the Raspberry Pi) to the Arduino. I have not added the script for the Arduino 
+# however this can be found on the Marvelmind website/ Github repos.  
