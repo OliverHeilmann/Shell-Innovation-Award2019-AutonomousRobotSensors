@@ -3,13 +3,17 @@ Myself and four others built an autonomous robot for our Masters project. Being 
 
 http://uosdesign.org/designshow2019/project/robot-localisation/
 
-## Some Pictures
+## The Design
 <p align="center">
-  <img width="750" src="https://github.com/OliverHeilmann/Financial_Data_MachineLearning/blob/master/Proj4_StockScreener/Pictures/4web.png">
-   <img width="750" src="https://github.com/OliverHeilmann/Financial_Data_MachineLearning/blob/master/Proj4_StockScreener/Pictures/5web.png">
+  <img width="750" src="https://github.com/OliverHeilmann/Shell-Innovation-Award2019-AutonomousRobotSensors/blob/master/GDP%20Github%20Figures/ExplodedView.png">
+   <img width="750" src="https://github.com/OliverHeilmann/Shell-Innovation-Award2019-AutonomousRobotSensors/blob/master/GDP%20Github%20Figures/Testing2.png"> 
+   <img width="750" src="https://github.com/OliverHeilmann/Shell-Innovation-Award2019-AutonomousRobotSensors/blob/master/GDP%20Github%20Figures/Testing1.png">
 </p>
 
-
+## Top Level Wiring Diagram
+<p align="center">
+  <img width="750" src="https://github.com/OliverHeilmann/Shell-Innovation-Award2019-AutonomousRobotSensors/blob/master/GDP%20Github%20Figures/WiringDiagram.png">
+</p>
 
 # Using Sensor Functions (Top Level)
 Marvelmind ultrasonic beacon system, BNO055 IMU, Optical flow sensor (from computer mouse via USB to Raspberry Pi)
@@ -19,6 +23,10 @@ Marvelmind ultrasonic beacon system, BNO055 IMU, Optical flow sensor (from compu
 2) Start Thread: hedge.start()
 3) Fetch Position: hedge.position() #Note: as [x,y,z]
 
+<p align="center">
+  <img width="750" src="https://github.com/OliverHeilmann/Shell-Innovation-Award2019-AutonomousRobotSensors/blob/master/GDP%20Github%20Figures/Beacon.png">
+</p>
+
 ## Optical Flow Commmands (import opticalflow):
 1) Create Thread: optic = Optical_Flow()
 2) Start Thread: optic.start()
@@ -26,11 +34,19 @@ Marvelmind ultrasonic beacon system, BNO055 IMU, Optical flow sensor (from compu
 4) Reset Position: optic.reset()	 #Note: as [0,0]
 5) Stop Readings: optic.stop() #Note: kernal cannot be started again after
 
+<p align="center">
+  <img width="750" src="https://github.com/OliverHeilmann/Shell-Innovation-Award2019-AutonomousRobotSensors/blob/master/GDP%20Github%20Figures/OpticalFlow.png">
+</p>
+
 ## IMU Commands (import BNO055):
 1) Create Thread: bno = BNO055.BNO055(serial_port='/dev/ttyS0', rst=18)
 2) Start Thread: bno.connect_IMU() #Note: this is a custom function to subvert bug when initialising
 3) Fetch Position: bno.position() #Note: as [heading,roll,pitch,sys,gyro,accel,mag], 3:end are calibration
 4) Calibrate Sensors: bno.calibrate() # See notes below:
+
+<p align="center">
+  <img width="750" src="https://github.com/OliverHeilmann/Shell-Innovation-Award2019-AutonomousRobotSensors/blob/master/GDP%20Github%20Figures/IMU.png">
+</p>
 
 ### Calibration Instructions:
 Once bno.calibrate() has been called then calibration begins. The order is [gyro, accelerometer, magnometer, system]
