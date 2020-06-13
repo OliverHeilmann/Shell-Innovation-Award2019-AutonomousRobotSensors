@@ -6,7 +6,7 @@ http://uosdesign.org/designshow2019/project/robot-localisation/
 ## The Design
 <p align="center">
   <img width="750" src="https://github.com/OliverHeilmann/Shell-Innovation-Award2019-AutonomousRobotSensors/blob/master/GDP%20Github%20Figures/ExplodedView.png">
-   <img width="750" src="https://github.com/OliverHeilmann/Shell-Innovation-Award2019-AutonomousRobotSensors/blob/master/GDP%20Github%20Figures/Testing2.png"> 
+   <img width="800" src="https://github.com/OliverHeilmann/Shell-Innovation-Award2019-AutonomousRobotSensors/blob/master/GDP%20Github%20Figures/Testing2.png"> 
    <img width="750" src="https://github.com/OliverHeilmann/Shell-Innovation-Award2019-AutonomousRobotSensors/blob/master/GDP%20Github%20Figures/Testing1.png">
 </p>
 
