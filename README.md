@@ -1,4 +1,17 @@
-# AutonomousRobot-Sensors
+# Project Summary
+Myself and four others built an autonomous robot for our Masters project. Being nominated for the *Shell Innovation Award*, we presented to a pannel of judges from Shell. It was announced, at our final university design show that we were the winners of this competition. See the following website for more information about our project, the design show and the competition.
+
+http://uosdesign.org/designshow2019/project/robot-localisation/
+
+## Some Pictures
+<p align="center">
+  <img width="750" src="https://github.com/OliverHeilmann/Financial_Data_MachineLearning/blob/master/Proj4_StockScreener/Pictures/4web.png">
+   <img width="750" src="https://github.com/OliverHeilmann/Financial_Data_MachineLearning/blob/master/Proj4_StockScreener/Pictures/5web.png">
+</p>
+
+
+
+# Using Sensor Functions (Top Level)
 Marvelmind ultrasonic beacon system, BNO055 IMU, Optical flow sensor (from computer mouse via USB to Raspberry Pi)
 
 ## Beacon Commands (import marvelmind_cy_mm):
